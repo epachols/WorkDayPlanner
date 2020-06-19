@@ -10,7 +10,7 @@ function generateBlocks() {
   $("<div>").addClass("col col-2 hour").text(timeEl[i]).appendTo(`#${hours[i]}`)
   // make input
   input = $("<input>");
-  input.addClass("col col-8 h4");
+  input.addClass("col col-8 h4 h-100");
   // colorizing each -- had to parse the time comparison
   if (now === hours[i]) {
     input.addClass("present");
