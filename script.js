@@ -9,7 +9,6 @@
 // work with this.target and if target.class=button
 
 // running a for loop to check for filling
-// assign each row a value based on hour of day
 
 $("#currentDay").text(moment().format("[Today is] dddd, MMMM Do YYYY"));
 var currentTime = moment().format("H");
@@ -43,38 +42,39 @@ function generateBlocks() {
 for (i = 0; i < 9; i++) {
   generateBlocks();
 }
-function storeEntry() {
-    if ($(this).prev()) {
-        var thingtoAdd = {};
-        thingtoAdd["time"] = parseInt($(this).prev().text());
-        thingtoAdd["entry"] = $(this).prev().val().trim();
-        console.log(thingtoAdd);
-        if (thingtoAdd.entry) {
-            localStorage.setItem(
-            parseInt($(this).prev().text()),
-            JSON.stringify($(this).prev().val().trim())
-          );
-        }
-}
 
 $("button").click(function (event) {
-  // var parentId = $(this).parent("row")
   if ($(this).prev()) {
-    var thingtoAdd = {};
-    thingtoAdd["time"] = parseInt($(this).prev().text());
-    thingtoAdd["entry"] = $(this).prev().val().trim();
-    console.log(thingtoAdd);
-    if (thingtoAdd.entry) {
+      var thingtoAdd = {};
+      thingtoAdd["time"] = parseInt($(this).prev().text());
+      thingtoAdd["entry"] = $(this).prev().val().trim();
+      // console.log(thingtoAdd);
+      if (thingtoAdd.entry) {
         localStorage.setItem(
-        parseInt($(this).prev().text()),
-        JSON.stringify($(this).prev().val().trim())
-      );
+          parseInt($(this).prev().text()),
+          JSON.stringify($(this).prev().val().trim())
+        );
+      }
     }
-  }
-  // replace triestostore with actual value keyed from row it's in, check parent, was trying to use VALUE to compare.
-  // if the string retrieved for the number is not empty
-});
+    // .
+    // if the string retrieved for the number is not empty
+  });
 
-// parseInt()
+ 
 
-// parseInt($(this).prev().text())
+// parseInt($(this).prev().text())}
+
+// function storeEntry() {
+//   if ($(this).prev()) {
+//     var thingtoAdd = {};
+//     thingtoAdd["time"] = parseInt($(this).prev().text());
+//     thingtoAdd["entry"] = $(this).prev().val().trim();
+//     console.log(thingtoAdd);
+//     if (thingtoAdd.entry) {
+//       localStorage.setItem(
+//         parseInt($(this).prev().text()),
+//         JSON.stringify($(this).prev().val().trim())
+//       );
+//     }
+//   }
+// }
