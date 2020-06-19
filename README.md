@@ -1,2 +1,5 @@
 # WorkDayPlanner
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. 
+
+# WorkDayPlanner is a simple calendar application that lets the user save events for each hour of the day. This runs in the browser and features dynamically updated HTML and CSS powered by jQuery. 
+
+1. 
