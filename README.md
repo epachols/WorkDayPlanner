@@ -15,4 +15,4 @@
 
 
 
-![Preview of Dynamic scheduling app](./assets/preview.png)
+![Preview of Dynamic scheduling app](/preview.png)
