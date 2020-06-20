@@ -30,7 +30,6 @@ function generateBlocks() {
 for (i = 0; i < 9; i++) {
   generateBlocks();
 }
-
 // click handler
 $("button").click(function (event) {
   var timeInput = parseInt($(this).prev().text());
